@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>api测试</title>
+    <style>
+        .div1{
+            width: 40%;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+<div class="div1">
+    <h2>登录</h2>
+    <form action="http://localhost:3000/user/login" method="POST">
+        姓名： <input type="text" name="name" value="coderly"/> <br>
+        用户账号： <input type="text" name="user_number" value="coderly"/> <br>
+        密码 <input type="text" name="password" value="123456"/> <br>
+        <input type="submit" value="登录" /> <br>
+    </form>
+    <h2>注册</h2>
+    <form action="http://localhost:3000/user/register" method="POST">
+        姓名： <input type="text" name="name" value="coderly"/> <br>
+        登录账号： <input type="text" name="user_number" value="coderly"/> <br>
+        密码 <input type="text" name="password" value="123456" /> <br>
+        年龄 <input type="text" name="age" value="24" /> <br>
+        简介 <input type="text" name="intro" value="一个优秀的人" /> <br>
+        <input type="submit" value="登录" /> <br>
+    </form>
+    <h2>获取好友</h2>
+    <form action="http://localhost:3000/user/friends" method="POST">
+        id <input type="text" name="id" value="1900100001"/> <br>
+        <input type="submit" value="查询" /> <br>
+    </form>
+    <hr>
+    <h2>创建一个问题</h2>
+    <form action="http://localhost:3000/question/create" method="POST">
+        用户id <input type="text" name="user_id" value="1900100001" /> <br>
+        标题 <input type="text" name="title" value="这是标题啊" /> <br>
+        内容<input type="text" name="content" value="这是一个内容"/> <br>
+        简介<input type="text" name="info" value="简介，你好" /> <br>
+        <input type="submit" value="提交" /> <br>
+    </form>
+    <h2>问题详情</h2>
+    <form action="http://localhost:3000/question/detail" method="GET">
+        问题id <input type="text" name="q_id" value="1900600002" /> <br>
+        <input type="submit" value="提交" /> <br>
+    </form>
+    <h2>根据问题id获取评论</h2>
+    <form action="http://localhost:3000/question/getCommentsById" method="POST">
+        问题id <input type="text" name="q_id" value="1900600002" /> <br>
+        <input type="submit" value="提交" /> <br>
+    </form>
+    <hr>
+    <h2>问题评论</h2>
+    <form action="http://localhost:3000/comments/create" method="POST">
+        问题id <input type="text" name="q_id" value="1900600002" /> <br>
+        用户id <input type="text" name="u_id" value="1900100001" /> <br>
+        内容 <input type="text" name="content" value="这是评论内容" /> <br>
+        是否第一条评论 <input type="text" name="first_comment" value="1" /> <br>
+        <input type="submit" value="提交" /> <br>
+    </form>
+    <h2>评论详情</h2>
+    <form action="http://localhost:3000/comments/detail" method="GET">
+        评论id <input type="text" name="c_id" value="19007000001" /> <br>
+        <input type="submit" value="提交" /> <br>
+    </form>
+    <h2>通过分类id获取文章</h2>
+    <form action="http://localhost:3000/article/getAriticleByCate" method="POST">
+        页数： <input type="text" name="page" /> <br>
+        数量：<input type="text" name="number" /> <br>
+        类别：<input type="text" name="category_id" /> <br>
+        <input type="submit" value="提交" /> <br>
+    </form>
+    <hr>
+    <h2>商品添加</h2>
+    <form action="http://localhost:3000/product/create" method="POST">
+        用户id <input type="text" name="u_id" value="1900100001"> <br>
+        商品名 <input type="text" name="name" value="火龙谷"> <br>
+        价格 <input type="text" name="price" value="122"> <br>
+        old价格 <input type="text" name="old_price" value="150"> <br>
+        优惠金额 <input type="text" name="coupon" value="10"> <br>
+        <input type="submit" value="提交" id="btn" /> <br>
+    </form>
+    <hr>
+    <h2>收货地址添加</h2>
+    <form action="http://localhost:3000/address/create" method="POST">
+        用户id <input type="text" name="u_id" value="1900100001"> <br>
+        用户姓名 <input type="text" name="name" value="coderly"> <br>
+        手机 <input type="text" name="phone" value="123456789"> <br>
+        省份 <input type="text" name="province" value="浙江"> <br>
+        城市 <input type="text" name="city" value="绍兴"> <br>
+        地区 <input type="text" name="area" value="越城区"> <br>
+        <input type="submit" value="提交" id="btn" /> <br>
+    </form>
+    <h2>文件上传测试</h2>
+    <form action="http://47.106.68.248:3002/upload" method="POST" enctype="multipart/form-data">
+        文件上传 <input type="file" name="avatar"> <br>
+        <input type="submit" value="提交" id="btn" /> <br>
+    </form>
+</div>
+</body>
+
+</html>

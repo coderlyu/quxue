@@ -1,0 +1,181 @@
+body,
+html {
+  background: #f9f9f9;
+  width: 100%;
+  height: 100%;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: rgb(139, 0, 0);
+}
+.avatar {
+  border-radius: 10px;
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+.app-wrapper {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.bg-white {
+  background: #fff;
+}
+.borderra4 {
+  border-radius: 4px;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, .1);
+}
+.border-top {
+  border-top: 1px solid rgba(160, 160, 160, 0.1);
+}
+.clearfix::after {
+  content: " ";
+  clear: both;
+  display: block;
+  height: 0;
+}
+.clearfix {
+  zoom: 1;
+}
+.column-n1 {
+  column-count: 1;
+}
+.column-n2 {
+  column-count: 2;
+}
+.column-n3 {
+  column-count: 3;
+}
+.flex1 {
+  flex: 1;
+}
+.flex2 {
+  flex: 2;
+}
+.flex3 {
+  flex: 3;
+}
+.flex4 {
+  flex: 4;
+}
+.flex-bt {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex-cr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex-dr {
+  flex-direction: row;
+}
+.flex-end {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.flex-dc {
+  flex-direction: column;
+}
+.flex-dc-end {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.flex-None {
+  flex: none;
+}
+.font12 {
+  font-size: 12px;
+  color: #444;
+}
+.font13 {
+  font-size: 13px;
+  color: #444;
+}
+.font14 {
+  font-size: 14px;
+}
+.font-c666 {
+  color: #666;
+}
+.padd5 {
+  padding: 5px;
+}
+.padd10 {
+  padding: 10px;
+}
+.padd20 {
+  padding: 20px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 5px 0;
+}
+.my-footer,
+.my-header {
+  padding: 0 20px;
+  height: 60px;
+}
+.main {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+}
+.margin20 {
+  margin: 20px 0;
+}
+.margin5 {
+  margin: 5px;
+}
+.margin10{
+  margin: 10px 0;
+}
+.over-hidden {
+  overflow: hidden;
+}
+.over-flow-auto {
+  overflow: auto;
+}
+.p-in-one-line {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.p-in-two-line {
+  word-break: break-all;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+.tag {
+  margin: 0 5px;
+  padding: 2px 6px;
+  border-radius: 10px;
+}
+.tag-wheat {
+  background: wheat;
+  color: #ed536b;
+}
+.tag-red {
+  color: red;
+  background: rgba(237, 84, 107, .1);
+}
+.tag-fWid {
+  font-weight: 600;
+}

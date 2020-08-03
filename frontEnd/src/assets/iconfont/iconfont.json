@@ -1,0 +1,37 @@
+{
+  "id": "1492386",
+  "name": "毕设",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "3247827",
+      "name": "密码",
+      "font_class": "mima",
+      "unicode": "e9e0",
+      "unicode_decimal": 59872
+    },
+    {
+      "icon_id": "3657218",
+      "name": "男",
+      "font_class": "nan",
+      "unicode": "e60c",
+      "unicode_decimal": 58892
+    },
+    {
+      "icon_id": "9290629",
+      "name": "女",
+      "font_class": "nv",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "9389369",
+      "name": "女",
+      "font_class": "nv1",
+      "unicode": "e6a8",
+      "unicode_decimal": 59048
+    }
+  ]
+}
