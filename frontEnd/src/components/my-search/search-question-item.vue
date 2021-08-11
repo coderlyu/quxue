@@ -33,7 +33,7 @@ export default {
   },
   methods: {
     toQuestionDetail () {
-      this.$router.push({ name: 'articleDetail', params: { id: this.qItem.id}})
+      this.$router.push({ name: 'articleDetail', params: { id: this.qItem.id } })
     }
   }
 }

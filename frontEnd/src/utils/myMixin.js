@@ -5,16 +5,16 @@ export default {
   },
   filters: {
     formatDate (time) {
-      return new Date( +new Date(time) + 8 * 3600 * 1000).toISOString().replace(/T/g, ' ').replace(/\.[\d]{3}Z/, '')
+      return new Date(+new Date(time) + 8 * 3600 * 1000).toISOString().replace(/T/g, ' ').replace(/\.[\d]{3}Z/, '')
     },
     filterAvatar (avatar) {
-      return avatar ? avatar : 'http://47.106.68.248:3002/uploads/2020042909270405990avatar.jpg.jpeg'
+      return avatar || 'http://47.106.68.248:3002/uploads/2020042909270405990avatar.jpg.jpeg'
     },
     filterAddress (adress) {
-      return adress ? adress : '未设置'
+      return adress || '未设置'
     },
     filterIntro (intro) {
-      return intro ? intro : '这家伙很懒，什么都没有留下'
+      return intro || '这家伙很懒，什么都没有留下'
     },
     filterTime (time) {
       let oldTime = +new Date(time)

@@ -64,10 +64,10 @@ export default {
       if (this.timeout) {
         clearTimeout(this.timeout)
       }
-      this.timeout = setTimeout((() => {
+      this.timeout = setTimeout(() => {
         this.$emit('addMore')
         clearTimeout(this.timeout)
-      }).bind(this), 1000)
+      }, 1000)
     }
   }
 }
